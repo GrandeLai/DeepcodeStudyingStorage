@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+	var i=1;
+	var sum=0;
+	for (var j=2;j<67;j++){
+		i*=j;
+	}
+	document.write(i);
+</script>
+</body>
+</html>
+ 
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+document.write('<br />');
+for (var i = 10; i >= 1; i--) { //外层循环代表的是要循环的行数
+            for (var k = 0; k < 10 - i; k++) {//这层循环代表的是要循环的空格数
+                document.write('&nbsp;&nbsp;&nbsp;');//&nbsp在 html 里是空格占位符
+            }
+            for (var j = 0; j < i; j++) {   //内层循环代表的是要打印的列数
+                document.write('$&nbsp;&nbsp;&nbsp;');
+            }
+            document.write('<br />');//第一层循环每结束一次换行
+        }
+
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+	
+	function factorialize(x){
+		var j=x;
+		for(var i=x-1;i>0;i--){
+			j*=i;
+		}
+		return j;
+	}
+	document.write(factorialize(5));
+</script>
+</body>
+</html>
